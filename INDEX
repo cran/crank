@@ -1,0 +1,6 @@
+cats2ranks		Calculate mean ranks from ordered category selections
+comp2mean		Convert competition to ordinary rankings
+meanranks		Calculate mean ranks for incomplete rankings
+muranks			Complete a vector/data frame/matrix of incomplete ranks
+print.cats2ranks	Print the result of cats2ranks
+print.meanranks		Print the result of meanranks
