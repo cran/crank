@@ -20,6 +20,7 @@
 # function. If ties are not scored as the mean rank, this method will _not_ 
 # work properly.
 # To process "competition ranks", set rankx to TRUE.
+# Be careful, this will process _any_ set of numbers.
 
 muranks<-function(x,allranks=NULL,rankx=FALSE) {
  dimx<-dim(x)

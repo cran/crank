@@ -11,7 +11,7 @@
  \item{allranks}{An optional list of all ranks that might have been
   made.}
  \item{labels}{Optional labels for the ranks.}
- \item{rankx}{Whether to convert competition ranks, or any other set of,
+ \item{rankx}{Whether to convert competition ranks, or any other set of
   numeric values, into the usual mean rankings for ties.}
 }
 \value{

@@ -34,6 +34,26 @@
  This will also override the rejection of rows in which the missing ranks
  are not sequential, and may produce counterintuitive imputed ranks.
 }
+\note{
+ \code{muranks} will impute ranks for "best/worst" ranking, where the 
+ method (rater) allocates the highest ranks to the most preferred data 
+ objects and the lowest ranks to the least preferred. The mean of all 
+ unallocated ranks is imputed for unranked data objects. It is assumed that 
+ unranked data objects are considered less preferred than those allocated 
+ high ranks, more preferred than those allocated low ranks, and not 
+ differentiated from each other. If this assumption is not satisfied, 
+ \code{muranks} will warn the operator that one or more rows have been 
+ dropped. To explain this behavior, consider the case in which a method 
+ allocates the ranks 1,2,3,5,7,8 to eight data objects. Two ranks have not 
+ been allocated, 4 and 6. It would be possible to impute the mean, 5, to 
+ both, but this ignores the implicit information that the two data objects 
+ were differentiated by the rank 5, which is "between" them. Only in the 
+ unlikely case that both were considered equivalent to the object ranked 5 
+ would this be correct, as there is no way to establish which was more or 
+ less preferred. The operator should be aware that if \code{rankx} is TRUE, 
+ the unranked objects will be allocated the lowest ranks, which is unlikely 
+ to be correct.
+}
 \author{Jim Lemon}
 \seealso{\code{\link{meanranks}},\code{\link{rank}}}
 \examples{

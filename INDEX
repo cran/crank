@@ -1,6 +1,15 @@
 cats2ranks		Calculate mean ranks from ordered category selections
-comp2mean		Convert competition to ordinary rankings
+fillArow		Impute missing ranks for one row
+fillArows		Impute missing ranks for several rows
+getLWargs		Get the arguments for fillArow and fillArows
+listBuilder		Build a list containing the results of a function applied to the elements of another list
+lwscreen		Screen for max/min statistics using Lim-Wolfe procedure
+lw.FriedmanTest		Return the Friedman Test statistic and p value
+lw.PageTest		Return the Page Trend Test statistic and p value
 meanranks		Calculate mean ranks for incomplete rankings
 muranks			Complete a vector/data frame/matrix of incomplete ranks
+page.trend.test		Perform the Page test of ordered alternatives
+permute			Permute the values of a vector
 print.cats2ranks	Print the result of cats2ranks
+print.lwstat		Print the results of lwscreen
 print.meanranks		Print the result of meanranks
