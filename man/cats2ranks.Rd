@@ -14,7 +14,7 @@
   the order of option selections, beginning with the highest ranking
   (usually something like "Most important") and descending.}
  \item{cats}{The range of numbers that represent options. The default is the
-  vector of unique entries in \code{x}.}
+  vector of unique entries in \samp{x}.}
 }
 \value{
  A list with four components:
@@ -24,7 +24,7 @@
  \item{rankcount}{The number of times each option was selected.}
 }
 \details{
- \code{cats2ranks} converts ordered option selections to mean ranks. It is
+ \samp{cats2ranks} converts ordered option selections to mean ranks. It is
  useful in the situation where a respondent is asked to select one of a number
  of options as the most important, another as the second most important, and
  so on. It counts the number of times each option code appears in each column
@@ -37,18 +37,18 @@
  that the respondent does not differentiate between unranked options, but these
  are all ranked lower than the options selected.
 
- \code{cats2ranks} is especially useful when respondents do not select the same
+ \samp{cats2ranks} is especially useful when respondents do not select the same
  number of options. The mean of unallocated ranks is calculated for each
  respondent so that all options are entered into the calculation of mean ranks.
 
- Note that \code{cats2ranks} interprets each value in \code{x} as a nominal
- level variable and its column index as the rank, while \code{meanranks}
+ Note that \samp{cats2ranks} interprets each value in \samp{x} as a nominal
+ level variable and its column index as the rank, while \samp{meanranks}
  interprets values as ordinal level (ranks). Thus if a matrix or data frame
- of ranks is passed to \code{cats2ranks}, it will not give the correct mean
+ of ranks is passed to \samp{cats2ranks}, it will not give the correct mean
  ranks or relative positions.
 }
 \author{Jim Lemon}
-\seealso{\code{\link{muranks}},\code{\link{meanranks}}}
+\seealso{\link{muranks},\link{meanranks}}
 \examples{
  # first a standard 1:m numerically coded selection
  opchoice<-matrix(NA,nrow=40,ncol=5)

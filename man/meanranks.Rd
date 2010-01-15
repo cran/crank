@@ -16,25 +16,24 @@
 }
 \value{
  A list with the following components:
- \item{ranks}{\code{x} with any NAs replaced by the mean of unallocated ranks
+ \item{ranks}{\samp{x} with any NAs replaced by the mean of unallocated ranks
   for each row.}
  \item{labels}{The vector of labels, defaulting to the integers 1:allranks.}
  \item{mean.ranks}{A vector of mean ranks for each value of allranks.}
 }
 \details{
- \code{meanranks} calls \code{muranks} to complete the rank matrix
+ \samp{meanranks} calls \samp{muranks} to complete the rank matrix
  before calculating the mean ranks for each column if there are any
- NAs in \code{x}.
+ NAs in \samp{x}.
   
- Note that \code{cats2ranks} interprets each value in \code{x} as a nominal
- level variable and its index as the rank, while \code{meanranks} interprets
+ Note that \samp{cats2ranks} interprets each value in \samp{x} as a nominal
+ level variable and its index as the rank, while \samp{meanranks} interprets
  values as ordinal level (ranks). Thus if a matrix or data frame of category
- labels is passed to \code{meanranks}, it will not give the correct mean
+ labels is passed to \samp{meanranks}, it will not give the correct mean
  ranks.
 }
 \author{Jim Lemon}
-\seealso{\code{\link{muranks}},\code{\link{rank}},
- \code{\link{cats2ranks}}}
+\seealso{\link{muranks}, \link{rank}, \link{cats2ranks}}
 \examples{
  # simulate "best/worst" ranking
  x<-matrix(NA,nrow=10,ncol=10)

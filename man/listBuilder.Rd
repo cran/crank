@@ -6,26 +6,26 @@
  listBuilder(x,FUN=NULL,fargs=NULL)
 }
 \arguments{
- \item{x}{The object that will be the first argument of \code{FUN}, or a
+ \item{x}{The object that will be the first argument of \samp{FUN}, or a
   possibly nested list of such objects.}
- \item{FUN}{A function that can accept \code{x} as its first argument.}
- \item{fargs}{A list of the remaining arguments to \code{FUN}.}
+ \item{FUN}{A function that can accept \samp{x} as its first argument.}
+ \item{fargs}{A list of the remaining arguments to \samp{FUN}.}
 }
 \value{
- If \code{x} is not a list and \code{FUN} is NULL, \code{x} is returned.
- If \code{FUN} creates a list from one or more elements of \code{x}, a
- list or nested list will be returned. Successive calls to \code{listBuilder}
+ If \samp{x} is not a list and \samp{FUN} is NULL, \samp{x} is returned.
+ If \samp{FUN} creates a list from one or more elements of \samp{x}, a
+ list or nested list will be returned. Successive calls to \samp{listBuilder}
  can rapidly create very large, deeply nested list structures.
 }
 \details{
- \code{listBuilder} descends the list structure of \code{x} if it is a
+ \samp{listBuilder} descends the list structure of \samp{x} if it is a
  list until it encounters a non-list element. It then passes that element
- as the first argument to \code{FUN} and returns the value of \code{FUN}.
+ as the first argument to \samp{FUN} and returns the value of \samp{FUN}.
  This may be a list of elements, replacing the original element, hence the
  name.
 }
 \author{Jim Lemon}
-\seealso{\code{\link{list}}}
+\seealso{\link{list}}
 \examples{
  # define a function that splits a vector into a list
  splitvec<-function(x) {
@@ -37,7 +37,7 @@
   }
   return(x)
  }
- testlist<-list(list(9,16),list(25,list(36,49)))
+ testlist<-list(c(9,16),list(25,c(36,49)))
  listBuilder(testlist,splitvec)
 }
 \keyword{misc}

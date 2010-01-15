@@ -15,14 +15,14 @@
  A list of one or more completed matrices of ranks, possibly nested.
 }
 \details{
- \code{fillArows} imputes missing ranks by examining the completed ranks for
+ \samp{fillArows} imputes missing ranks by examining the completed ranks for
  each set of rows that have the same number of missing ranks. If more than one
  row has the minimum number of missing values, the order of these rows is
- permuted and the matrix \code{x} becomes a list of matrices in which the
+ permuted and the matrix \samp{x} becomes a list of matrices in which the
  values in the rows will be imputed in different orders. Another level of
- permutation and multiplication of matrices may occur in \code{fillArow} to
+ permutation and multiplication of matrices may occur in \samp{fillArow} to
  which the matrices are passed for the actual imputation. The function
- \code{getLWargs} is called to get the arguments for \code{fillArow}. 
+ \samp{getLWargs} is called to get the arguments for \samp{fillArow}. 
  See Lim and Wolfe (2002) for details of this process.
 }
 \references{
@@ -31,8 +31,7 @@
  43(2): 187-206.
 }
 \author{Jim Lemon}
-\seealso{\code{\link{lwscreen}}, \code{\link{getLWargs}},
- \code{\link{fillArow}}}
+\seealso{\link{lwscreen}, \link{getLWargs}, \link{fillArow}}
 \examples{
  # The first example matrix from Lim and Wolfe (2002)
  lwmat<-matrix(c(3,1,2,4,NA,2,1,NA,2,NA,1,NA),nrow=3,byrow=TRUE)

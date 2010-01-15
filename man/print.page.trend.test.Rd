@@ -9,8 +9,8 @@
  \method{print}{page.trend.test}(x,...)
 }
 \arguments{
- \item{x}{an object returned from \code{page.trend.test}}
- \item{...}{arguments to be passed to \code{print}}
+ \item{x}{an object returned from \samp{page.trend.test}}
+ \item{...}{arguments to be passed to \samp{print}}
 }
 \value{
  nil

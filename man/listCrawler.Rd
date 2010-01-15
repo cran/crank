@@ -8,31 +8,34 @@
   retval=list(indx=vector("numeric",0),element=NULL,value=NA))
 }
 \arguments{
- \item{x}{The object that will be the first argument of \code{FUN}, or a
+ \item{x}{The object that will be the first argument of \samp{FUN}, or a
   possibly nested list of such objects.}
- \item{FUN}{A function that can accept \code{x} as its first argument.}
+ \item{FUN}{A function that can accept \samp{x} as its first argument.}
  \item{maxval}{Whether to look for maximal (TRUE) or minimal (FALSE) values of
-  the function \code{FUN}.}
+  the function \samp{FUN}.}
  \item{retval}{The list that is eventually returned.}
 }
 \value{
  A list containing:
   \item{indx}{the indices of the element producing the extreme value of
-   \code{FUN}.}
+   \samp{FUN}.}
   \item{element}{The element that produced the extremum.}
-  \item{value}{The extreme value of \code{FUN}.}
+  \item{value}{The extreme value of \samp{FUN}.}
 }
 \details{
- \code{listCrawler} descends the list structure of \code{x} applying \code{FUN}
- to any non-list elements it encounters. If the value of \code{FUN} is larger or
- smaller than the current extremum (depending upon the value of \code{maxval}),
+ \samp{listCrawler} descends the list structure of \samp{x} applying \samp{FUN}
+ to any non-list elements it encounters. If the value of \samp{FUN} is larger or
+ smaller than the current extremum (depending upon the value of \samp{maxval}),
  the new value becomes the current extremum.
 }
 \author{Jim Lemon}
-\seealso{\code{\link{list}}, \code{\link{listBuilder}}}
+\seealso{\link{list}, \link{listBuilder}}
 \examples{
  # a simple example using the square root function
  testlist<-list(list(9,16),list(25,list(36,49)))
+ # first get the default maximum
  listCrawler(testlist,sqrt)
+ # then the minimum
+ listCrawler(testlist,sqrt,maxval=FALSE)
 }
 \keyword{misc}

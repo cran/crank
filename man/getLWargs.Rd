@@ -17,11 +17,11 @@
  \item{Brows}{The indices of the complete rows.}
 }
 \details{
- \code{getLWargs} calculates the information required for \code{fillArows}
- and \code{fillArow} to impute the missing ranks in a matrix.
+ \samp{getLWargs} calculates the information required for \samp{fillArows}
+ and \samp{fillArow} to impute the missing ranks in a matrix.
 }
 \author{Jim Lemon}
-\seealso{\code{\link{listBuilder}}}
+\seealso{\link{listBuilder}}
 \examples{
  # The first example matrix from Lim and Wolfe (2002)
  lwmat<-matrix(c(3,1,2,4,NA,2,1,NA,2,NA,1,NA),nrow=3,byrow=TRUE) 

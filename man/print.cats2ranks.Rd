@@ -10,10 +10,10 @@
  \item{...}{a dummy argument to keep S3 methods happy}
 }
 \details{
- Displays the names and mean ranks of the output of \code{cats2ranks} in
+ Displays the names and mean ranks of the output of \samp{cats2ranks} in
  order of numerically ascending ranks.
 }
 \value{nil}
 \author{Jim Lemon}
-\seealso{\code{\link{cats2ranks}}}
+\seealso{\link{cats2ranks}}
 \keyword{misc}

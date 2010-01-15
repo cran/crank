@@ -10,9 +10,9 @@
  \item{...}{a dummy argument to keep S3 methods happy}
 }
 \details{
- Displays the output of \code{lwscreen}.
+ Displays the output of \samp{lwscreen}.
 }
 \value{nil}
 \author{Jim Lemon}
-\seealso{\code{\link{lwscreen}}}
+\seealso{\link{lwscreen}}
 \keyword{misc}

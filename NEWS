@@ -1,0 +1,3 @@
+version 1.0-1
+
+	changed \code tags to \samp and removed formatting from \link tags
