@@ -1,0 +1,20 @@
+# created 28/9/2011 - Jim Lemon
+export(
+cats2ranks,
+fillArow,
+fillArows,
+getLWargs,
+listBuilder,
+listCrawler,
+lw.FriedmanTest,
+lwscreen,
+meanranks,
+muranks,
+page.trend.test,
+permute
+)
+# methods
+S3method(print,cats2ranks)
+S3method(print,lwstat)
+S3method(print,meanranks)
+S3method(print,page.trend.test)
