@@ -1,7 +1,7 @@
-6d6fc78280ea5b2fb2f62d09bc709a80 *DESCRIPTION
+c0183fc1e23ac896e5af50b3cc664033 *DESCRIPTION
 192a94f5fe0c18807eef6cc18eaf9bf1 *INDEX
 f6bc7296be6b8732d73bb95d46b929ca *NAMESPACE
-03d944561c71eb02f49482a386f8244c *NEWS
+6b94f35e39441b6aa7c37c93707cf04d *NEWS
 8de1b76d3c32968699ae829631dda091 *R/cats2ranks.R
 42381d06a757994299341839ad4963ff *R/fillArows.R
 2f822bf1147f4fda2171ce43fa5d3842 *R/getLWargs.R
@@ -17,12 +17,12 @@ bc6c36c28c8006c3e60e3ee06feb573d *man/cats2ranks.Rd
 4492ec288b7edff2870c0f102ed102fb *man/fillArows.Rd
 f5b4f08fd7db405b380a9a8bf6132796 *man/getLWargs.Rd
 27c7fcf64c53e86fb68bb99b5a4fd1fc *man/listBuilder.Rd
-7c91e473b127a25ec6f1c15ed10140ac *man/listCrawler.Rd
+523c5406ba7d2cbd1d3780c616791c72 *man/listCrawler.Rd
 10dff6d2b10c04627e9df38f752ffe01 *man/lw.FriedmanTest.Rd
 e8a485e80ee8571c4df85589868f84f4 *man/lwscreen.Rd
 e29032b945a6cb5e8dabfa1f23b60c39 *man/meanranks.Rd
 cf3b7e37294a479462362f85206e1c93 *man/muranks.Rd
-b2a4e737d578bfb56cbe435c037abba9 *man/page.trend.test.Rd
+3af19565671aaf469d295dbad989203f *man/page.trend.test.Rd
 791e3bb72c01673e8a1550dd6e553c29 *man/permute.Rd
 e35e019d7d974790cbfb434f0ac0d17f *man/print.cats2ranks.Rd
 b5cc0c2e270d42026eed78e713928576 *man/print.lwstat.Rd

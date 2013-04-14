@@ -1,3 +1,12 @@
+version 1.0-4
+
+	Rebuild for R-3.0
+
+version 1.0-3
+
+	fixed the help page for page.trend.test, which incorrectly stated that the
+	input matrix was scores rather than ranks - thanks to Paul Gerrish
+
 version 1.0-2
 
 	added namespace

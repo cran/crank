@@ -26,7 +26,8 @@
  \samp{listCrawler} descends the list structure of \samp{x} applying \samp{FUN}
  to any non-list elements it encounters. If the value of \samp{FUN} is larger or
  smaller than the current extremum (depending upon the value of \samp{maxval}),
- the new value becomes the current extremum.
+ the new value becomes the current extremum. The default value of \samp{FUN} just
+ takes the value of the elements.
 }
 \author{Jim Lemon}
 \seealso{\link{list}, \link{listBuilder}}

@@ -8,13 +8,12 @@
  page.trend.test(x)
 }
 \arguments{
-  \item{x}{a 2D matrix of scores}
+  \item{x}{a 2D matrix of ranks}
 }
 \details{
- \samp{page.trend.test} will accept a matrix of scores where the rows 
+ \samp{page.trend.test} will accept a matrix of ranks where the rows 
  represent methods (usually raters) and the columns represent related
- data objects. It apparently handles ties, but not missing values. By default 
- it assumes that numerically higher scores represent numerically lower ranks.
+ data objects. It apparently handles ties, but not missing values.
  For small values of k (methods) or N (data objects), \samp{page.trend.test} 
  will try to look up the tabled values (as in Siegel & Castellan (1988) for 
  significance. For \samp{k,N > 3,20} or \samp{k,N > 4-10,12}, a normal 
