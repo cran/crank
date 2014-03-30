@@ -1,6 +1,5 @@
-page.trend.test<-function(x) {
- if(missing(x))
-  stop("Usage: page.trend.test(x)\n\twhere x is a matrix of ranks")
+page.trend.test<-function(x,ranks=TRUE) {
+ if(missing(x)) stop("Usage: page.trend.test(x,ranks=TRUE)\n")
  dimx<-dim(x)
  # This one only requires two dimensions
  page.crit3<-
@@ -32,10 +31,12 @@ page.trend.test<-function(x) {
   544,790,1032,1273,1512,1750,1987,2223,2459,2694,2929,
   726,1056,1382,1704,2025,2344,2662,2980,3296,3612,3927),
   c(11,7,3))
- mean.ranks<-apply(x,2,mean)
+ if(ranks) xranks<-x
+ else xranks<-t(apply(x,1,rank))
+ xR<-apply(xranks,2,sum)
  Lval<-NA
  p.table<-NA
- L<-sum(apply(x,2,sum)*1:dimx[2])
+ L<-sum(xR*(1:dimx[2]))
  if((dimx[1] > 1 && dimx[1] < 13) && (dimx[2] > 3 && dimx[2] < 11))
   Lval<-page.crit4plus[dimx[1]-1,dimx[2]-3,]
  if((dimx[1] > 1 && dimx[1] < 21) && dimx[2] == 3)
@@ -58,7 +59,7 @@ page.trend.test<-function(x) {
   zL<-NA
   pZ<-NA
  }
- ptt<-list(ranks=x,mean.ranks=mean.ranks,L=L,p.table=p.table,Z=zL,pZ=pZ)
+ ptt<-list(ranks=x,mean.ranks=xranks,L=L,p.table=p.table,Z=zL,pZ=pZ)
  class(ptt)<-"page.trend.test"
  return(ptt)
 }

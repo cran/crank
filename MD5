@@ -1,7 +1,6 @@
-c0183fc1e23ac896e5af50b3cc664033 *DESCRIPTION
-192a94f5fe0c18807eef6cc18eaf9bf1 *INDEX
+ea91c560318a1c7f0a66c2a1168e0d39 *DESCRIPTION
 f6bc7296be6b8732d73bb95d46b929ca *NAMESPACE
-6b94f35e39441b6aa7c37c93707cf04d *NEWS
+469aac7bbd541a574d951e62ee01355d *NEWS
 8de1b76d3c32968699ae829631dda091 *R/cats2ranks.R
 42381d06a757994299341839ad4963ff *R/fillArows.R
 2f822bf1147f4fda2171ce43fa5d3842 *R/getLWargs.R
@@ -10,7 +9,7 @@ e6582ed33bd76d784955d4f5557d4eda *R/listCrawler.R
 bf354838c4ddb4359aea324c0a360260 *R/lwscreen.R
 27f4d5c82265c2617474c6b8f432e96c *R/meanranks.R
 4bffe8702b0f0e4258d135a9b502d9e7 *R/muranks.R
-249a5327044db63c639851e2ff2b2327 *R/page.test.R
+75132b550af76251ff6fe0edb718c758 *R/page.test.R
 fa8b8412781f9668663d02b393535279 *R/permute.R
 bc6c36c28c8006c3e60e3ee06feb573d *man/cats2ranks.Rd
 1bbaac4dc7e492c57bd043669963d262 *man/fillArow.Rd
@@ -22,7 +21,7 @@ f5b4f08fd7db405b380a9a8bf6132796 *man/getLWargs.Rd
 e8a485e80ee8571c4df85589868f84f4 *man/lwscreen.Rd
 e29032b945a6cb5e8dabfa1f23b60c39 *man/meanranks.Rd
 cf3b7e37294a479462362f85206e1c93 *man/muranks.Rd
-3af19565671aaf469d295dbad989203f *man/page.trend.test.Rd
+648efae933526079b374c87ed26ea071 *man/page.trend.test.Rd
 791e3bb72c01673e8a1550dd6e553c29 *man/permute.Rd
 e35e019d7d974790cbfb434f0ac0d17f *man/print.cats2ranks.Rd
 b5cc0c2e270d42026eed78e713928576 *man/print.lwstat.Rd

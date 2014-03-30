@@ -5,10 +5,11 @@
  calculates the Page test for ordered alternatives.
 }
 \usage{
- page.trend.test(x)
+ page.trend.test(x,ranks=TRUE)
 }
 \arguments{
-  \item{x}{a 2D matrix of ranks}
+  \item{x}{a 2D matrix of ranks or observations.}
+  \item{ranks}{Whether the values in x are ranks or observations.}
 }
 \details{
  \samp{page.trend.test} will accept a matrix of ranks where the rows 
@@ -18,6 +19,10 @@
  will try to look up the tabled values (as in Siegel & Castellan (1988) for 
  significance. For \samp{k,N > 3,20} or \samp{k,N > 4-10,12}, a normal 
  approximation is returned. Only one of these values will be returned.
+
+ If \samp{x} is FALSE, the function ranks the values in \samp{x} and then
+ calculates the test. If the values are already ranks, it usually makes no
+ difference.
 }
 \value{
  \item{ranks}{matrix of ranks}
@@ -29,7 +34,8 @@
 }
 \references{Siegel, S. & Castellan, N.J.Jr. (1988) Nonparametric
  statistics for the behavioral sciences. Boston, MA: McGraw-Hill.}
-\author{Jim Lemon}
+\author{Jim Lemon - thanks to Mikhail Trofimov for discovering a major error
+ in the function and supplying the correction}
 \note{The Page test for ordered alternatives is slightly more powerful than
  the Friedman analysis of variance by ranks.}
 \examples{
