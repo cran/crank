@@ -20,7 +20,7 @@
  significance. For \samp{k,N > 3,20} or \samp{k,N > 4-10,12}, a normal 
  approximation is returned. Only one of these values will be returned.
 
- If \samp{x} is FALSE, the function ranks the values in \samp{x} and then
+ If \samp{ranks} is FALSE, the function ranks the values in \samp{x} and then
  calculates the test. If the values are already ranks, it usually makes no
  difference.
 }

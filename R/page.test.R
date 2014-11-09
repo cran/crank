@@ -1,5 +1,6 @@
 page.trend.test<-function(x,ranks=TRUE) {
  if(missing(x)) stop("Usage: page.trend.test(x,ranks=TRUE)\n")
+ # k is number of rows, n is number of columns
  dimx<-dim(x)
  # This one only requires two dimensions
  page.crit3<-
@@ -54,12 +55,14 @@ page.trend.test<-function(x,ranks=TRUE) {
   cat("sigmaL =",sigmaL,"\n")
   zL<-((12*L-3*munum)/(dimx[2]*(dimx[2]-1)))*sqrt((dimx[2]-1)/dimx[1])
   pZ<-pnorm(zL,lower.tail=FALSE)
+  Lnum<-(12 * L - 3 * dimx[1] * dimx[2] * (dimx[2] + 1) * (dimx[2] + 1))
+  Lden<-dimx[1] * dimx[2] * (dimx[2] * dimx[2] - 1) * (dimx[2] + 1)
+  x2L<-Lnum * Lnum / Lden
+  px2<-pchisq(x2L,1,lower.tail=FALSE)
  }
- else {
-  zL<-NA
-  pZ<-NA
- }
- ptt<-list(ranks=x,mean.ranks=xranks,L=L,p.table=p.table,Z=zL,pZ=pZ)
+ else zL<-pZ<-x2L<-px2<-NA
+ ptt<-list(ranks=x,mean.ranks=xranks,L=L,p.table=p.table,Z=zL,pZ=pZ,
+  x2L=x2L,px2=px2)
  class(ptt)<-"page.trend.test"
  return(ptt)
 }
@@ -68,8 +71,9 @@ print.page.trend.test<-function(x,...) {
  cat("\nPage test for ordered alternatives\n")
  cat("L =",x$L)
  if(is.na(x$p.table)) {
-  plabel<-paste("Z =",x$Z,", p =",x$pZ,sep="",collapse="")
-  cat(plabel,x$p.chisq,"\n\n")
+  pZlabel<-paste(" Z =",x$Z,", p =",x$pZ,sep="",collapse="")
+  px2label<-paste(" X2 =",x$x2L,", p =",x$px2,sep="",collapse="")
+  cat(pZlabel,"\n",px2label,"\n\n")
  }
  else cat("  p(table) ",x$p.table,"\n\n")
 }

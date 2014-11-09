@@ -1,3 +1,7 @@
+version 1.0-6
+
+	minor fix to page.trend.test help page (thanks to "joe")
+
 version 1.0-5
 
 	Important fix of bug in page.trend.test (thanks to Mikhail Trofimov)
