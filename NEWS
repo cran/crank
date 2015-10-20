@@ -1,3 +1,7 @@
+version 1.1
+
+	added imports for R CMD check
+
 version 1.0-6
 
 	minor fix to page.trend.test help page (thanks to "joe")

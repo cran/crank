@@ -1,4 +1,5 @@
 # created 28/9/2011 - Jim Lemon
+importFrom("stats", "friedman.test", "pchisq", "pnorm")
 export(
 cats2ranks,
 fillArow,
