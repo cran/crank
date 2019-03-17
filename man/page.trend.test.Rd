@@ -21,8 +21,8 @@
  approximation is returned. Only one of these values will be returned.
 
  If \samp{ranks} is FALSE, the function ranks the values in \samp{x} and then
- calculates the test. If the values are already ranks, it usually makes no
- difference.
+ calculates the test. If the values are already ranks, it usually makes
+ no difference.
 }
 \value{
  \item{ranks}{matrix of ranks}
@@ -34,8 +34,9 @@
 }
 \references{Siegel, S. & Castellan, N.J.Jr. (1988) Nonparametric
  statistics for the behavioral sciences. Boston, MA: McGraw-Hill.}
-\author{Jim Lemon - thanks to Mikhail Trofimov for discovering a major error
- in the function and supplying the correction}
+\author{Jim Lemon - thanks to Mikhail Trofimov and Michael Kirchhof
+ for discovering major errors in the function and supplying the 
+ corrections}
 \note{The Page test for ordered alternatives is slightly more powerful than
  the Friedman analysis of variance by ranks.}
 \examples{

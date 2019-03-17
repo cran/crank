@@ -2,6 +2,7 @@
 importFrom("stats", "friedman.test", "pchisq", "pnorm")
 export(
 cats2ranks,
+elrepos,
 fillArow,
 fillArows,
 getLWargs,
@@ -12,7 +13,8 @@ lwscreen,
 meanranks,
 muranks,
 page.trend.test,
-permute
+permute,
+spsort
 )
 # methods
 S3method(print,cats2ranks)
