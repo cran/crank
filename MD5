@@ -1,4 +1,4 @@
-11054b4bcfa7e3850cc56c8e9193a85f *DESCRIPTION
+cc77465598528e18635abaeb62ebd01b *DESCRIPTION
 fde77af16e43ac16c3de4f8cb505ff66 *NAMESPACE
 08dd2b4d8e4ba5f52a711bfb88defedf *NEWS
 8de1b76d3c32968699ae829631dda091 *R/cats2ranks.R
@@ -11,7 +11,7 @@ bf354838c4ddb4359aea324c0a360260 *R/lwscreen.R
 4bffe8702b0f0e4258d135a9b502d9e7 *R/muranks.R
 1ad09ac8ead78932aa449004a2add3a6 *R/page.test.R
 fa8b8412781f9668663d02b393535279 *R/permute.R
-d18a2210c455b20ce26dc54d9273e360 *R/spsort.R
+13cfd0ea5f6e28432d7e3816e8a6bcbf *R/spsort.R
 bc6c36c28c8006c3e60e3ee06feb573d *man/cats2ranks.Rd
 c170a17479ba561608e7250c54bb95da *man/elrepos.Rd
 1bbaac4dc7e492c57bd043669963d262 *man/fillArow.Rd

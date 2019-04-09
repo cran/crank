@@ -6,6 +6,7 @@ elrepos<-function(x,i1,i2) {
  if(i1 > 1) return(c(x[1:(i1-1)],tmp,x[i1:length(x)]))
  else return(c(tmp,x))
 }
+
 # sorts the elements in L with respecte to the precedence rules listed in x
 spsort<-function(x,L=NULL) {
  # if L is not present, assume it is composed of all the elements in x
@@ -19,7 +20,7 @@ spsort<-function(x,L=NULL) {
    nrep<-nrep+1
   }
  }
- cat(nrep,"elrepos\n")
+ cat(nrep,"elements repositioned\n")
  return(L)
 }
 
